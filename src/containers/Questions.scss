@@ -1,0 +1,7 @@
+.questions {
+    height: calc(100vh - 60px);
+    
+    &__slide {
+    flex-grow: 1;
+    }
+}

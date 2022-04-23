@@ -1,8 +1,8 @@
 {
     "forSale": true,
     "sort": ["bestSelling", "newest", "trending", "mostFavorited"],
-    "product": ["Wallpaper", "Bedding", "Dining", "Living_Decor"],
-    "style": ["allModern", "allTraditional", "allHistorical", "allNautical", "allArtistic", "allShapes", "allTexture", "allGeography", "allWorldly"],
-    "color": ["black", "brown", "grey", "white", "yellow", "green", "blue", "purple", "pink", "red", "orange"],
+    "product": ["Bedding", "Dining", "Living_Decor", "Wallpaper" ],
+    "style": [["allModern", "allArtistic", "allShapes", "allTexture"], ["allTraditional", "allNautical", "allHistorical", "allGeography", "allWorldly"]],
+    "color": ["black", "brown", "grey", "white", "green", "blue", "purple", "pink", "red", "orange", "yellow"],
     "topic": ["animals", "nature", "novelty", null]
 }

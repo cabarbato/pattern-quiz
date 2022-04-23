@@ -1,9 +1,36 @@
 [{
-"question": "",
-"param": "sort",
-"answers": [
-
-],
-"selection_type": "single",
-"content_type": "text"
+    "question": "I like to think of myself as: ",
+    "param": "sort",
+    "answers": [
+        "A reliable person who appreciates the tried and true",
+        "Unique, someone who marches to the beat of their own drum",
+        "A trendsetter, always looking for the next big thing",
+        "An empath, always thinking about others"
+    ],
+    "selection_type": "single",
+    "content_type": "text"
+},{
+    "question": "Cras eu auctor enim. Nullam ex nisl, accumsan sed augue sit amet, vestibulum euismod quam.",
+    "param": "topic",
+    "answers": ["animals", "nature", "novelty", null],
+    "selection_type": "single",
+    "content_type": "images"
+},{
+    "question": "Cras eu auctor enim. Nullam ex nisl, accumsan sed augue sit amet, vestibulum euismod quam.",
+    "param": "product",
+    "answers": ["Bedding", "Dining", "Living_Decor", "Wallpaper"],
+    "selection_type": "single",
+    "content_type": "text"
+},{
+    "question": "Cras eu auctor enim. Nullam ex nisl, accumsan sed augue sit amet, vestibulum euismod quam.",
+    "param": "style",
+    "answers": ["True", "False"],
+    "selection_type": "single",
+    "content_type": "text"
+},{
+    "question": "Cras eu auctor enim. Nullam ex nisl, accumsan sed augue sit amet, vestibulum euismod quam.",
+    "param": "color",
+    "answers": ["black", "brown", "grey", "white", "green", "blue", "purple", "pink", "red", "orange", "yellow"],
+    "selection_type": "multiple",
+    "content_type": "text"
 }]

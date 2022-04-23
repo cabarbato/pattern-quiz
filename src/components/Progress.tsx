@@ -10,7 +10,7 @@ const Progress = ({total_questions, current_question}) => {
 const total = total_questions + 1,
 current = current_question + 1;
 
-return (<Row className="py-5">
+return (<Row className="questions__progress py-5">
 <Col xxl={6} xl={8} lg={10} md={12} className="mx-lg-auto">
     <ProgressBar now={100 * (total / ((total - current) + 1))} label={`Question ${current} of ${total}`} />
 </Col>

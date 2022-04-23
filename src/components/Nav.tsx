@@ -1,11 +1,16 @@
 import { useState, useRef } from "react";
 import { Row, Col, Button, Overlay, Tooltip } from "react-bootstrap";
 import { connect } from "react-redux"
+import { setCurrentQuestion, setSubmitted } from "../features/quizSlice";
 
 const mapStateToProps = state => ({
     current_question: state.quiz.current_question,
     total_questions: state.quiz.total_questions
-});
+}),
+    mapDispatchToProps = dispatch => ({
+        onSetCurrentQuestion: d => dispatch(setCurrentQuestion(d)),
+        onSetSubmitted: d => dispatch(setSubmitted(d))
+    });
 
 const Nav = ({ total_questions, current_question }) => {
     const nullRef = useRef(null),
@@ -20,7 +25,7 @@ const Nav = ({ total_questions, current_question }) => {
 
     return (
         <>
-            <Row className="py-5">
+            <Row className="nav py-5">
                 <Col xxl={6} xl={8} lg={10} md={12} className="mx-lg-auto d-flex justify-content-between">
                     <div className="nav__button-wrapper" onClick={() => setState({ ...state, show: !current_question ? prev : nullRef })} onMouseOut={() => setState({ ...state, show: nullRef })}>
                         <Button className="rounded-0" variant="outline-secondary" size="lg" ref={prev} disabled={!current_question} data-disabled-tooltip="There's no more questions to go back to.">Prev</Button>
@@ -40,4 +45,4 @@ const Nav = ({ total_questions, current_question }) => {
     )
 }
 
-export default connect(mapStateToProps)(Nav)
+export default connect(mapStateToProps, mapDispatchToProps)(Nav)
