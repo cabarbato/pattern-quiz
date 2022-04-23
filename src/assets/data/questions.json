@@ -1,5 +1,9 @@
 [{
 "question": "",
-"answers": [],
-"multiple_selection": true
+"param": "sort",
+"answers": [
+
+],
+"selection_type": "single",
+"content_type": "text"
 }]

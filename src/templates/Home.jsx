@@ -7,10 +7,10 @@ const Home = () => {
   animateClasses();
   useEffect(() => animateClasses());
   return (
-    <div className="App">
+    <main>
       <Header />
       <Quiz />
-    </div>
+    </main>
   );
 }
 
