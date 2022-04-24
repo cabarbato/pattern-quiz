@@ -15,10 +15,12 @@ const Results = ({ results }) => {
     
     const cards = results.slice(1)
     return <div className="products">
+        <h1>Your New Pattern</h1>
         <FeaturedProduct {...results[0]} />
+        <hr />
         <h4>Here's a few other suggestions based on your answers:</h4>
         <div className="products__list grid">
-            {cards.map(d => <ProductCard {...d} />)}
+            {cards.map(d => <ProductCard {...d} key={d.id} />)}
         </div>
     </div>
 }
