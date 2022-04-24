@@ -6,14 +6,7 @@ body {
   font-size: 16px;
   scroll-behavior: smooth;
   font-family: Lato, sans-serif;
-  color: $dark;
-  
-  @include media-breakpoint-down(sm) { 
-    font-size: 12px;
-   }
-   @include media-breakpoint-down(md) { 
-     font-size: 14px;
-    }
+  color: $black;
 
   #root {
     position: relative;
@@ -27,4 +20,30 @@ body {
       z-index: 2;
     }
   }
+}
+
+.container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.animate {
+  opacity: 0;
+}
+
+button,
+[role=button] {
+  transition: .15s;
+  border-radius: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: Lato, sans-serif;
+  color: $primary-500;
 }

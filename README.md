@@ -1,3 +1,12 @@
+# Spoonflower Pattern Quiz
+This is a quick (<= 4hr) demo quiz using the Spoonflower API. It's a React/Redux based SPA that uses Axios to make a call to the designs endpoint using the user's selected answers and shows a short list of recommended patterns.
+
+## Todo
+- [ ] Finish tests
+- [ ] Animate slides on change
+- [ ] Responsive styling
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

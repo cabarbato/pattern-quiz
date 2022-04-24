@@ -58,7 +58,7 @@ function animateClasses() {
 
     ScrollTrigger.create({
       trigger: elem,
-      start: "top center",
+      start: "bottom bottom",
       onEnter: () => showElement(elem)
       
     });

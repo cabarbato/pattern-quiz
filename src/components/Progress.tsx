@@ -1,19 +1,17 @@
-import { current } from "@reduxjs/toolkit";
-import { Row, Col, ProgressBar } from "react-bootstrap";
-import { connect } from "react-redux"
+import { connect } from "react-redux";
 
 const mapStateToProps = state => ({
     current_question: state.quiz.current_question,
-    total_questions: state.quiz.total_questions
+    total_questions: state.quiz.total_questions,
+    is_submitted: state.quiz.is_submitted
 });
-const Progress = ({total_questions, current_question}) => {
-const total = total_questions + 1,
-current = current_question + 1;
+const Progress = ({ total_questions, current_question, is_submitted }) => {
+    const total = total_questions + 1,
+        percent = 100 / (total - current_question + 1);
 
-return (<Row className="questions__progress py-5">
-<Col xxl={6} xl={8} lg={10} md={12} className="mx-lg-auto">
-    <ProgressBar now={100 * (total / ((total - current) + 1))} label={`Question ${current} of ${total}`} />
-</Col>
-</Row>)}
+    return <div className="progress">
+            <progress className="progress__bar animated" value={is_submitted ? 100 : percent} max="100" />
+        </div>
+}
 
 export default connect(mapStateToProps)(Progress)

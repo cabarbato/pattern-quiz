@@ -9,28 +9,28 @@
     ],
     "selection_type": "single",
     "content_type": "text"
-},{
-    "question": "Cras eu auctor enim. Nullam ex nisl, accumsan sed augue sit amet, vestibulum euismod quam.",
+}, {
+    "question": "Pick the most exciting outdoor excursion",
     "param": "topic",
-    "answers": ["animals", "nature", "novelty", null],
+    "answers": ["animals.jpg", "nature.jpg", "novelty.jpg", "all.jpg"],
     "selection_type": "single",
     "content_type": "images"
-},{
-    "question": "Cras eu auctor enim. Nullam ex nisl, accumsan sed augue sit amet, vestibulum euismod quam.",
+}, {
+    "question": "What's your ideal weekend at home?",
     "param": "product",
-    "answers": ["Bedding", "Dining", "Living_Decor", "Wallpaper"],
+    "answers": ["Curling up in bed with a book", "Hosting an intimate dinner party", "Watching a movie with your besties"],
     "selection_type": "single",
     "content_type": "text"
-},{
-    "question": "Cras eu auctor enim. Nullam ex nisl, accumsan sed augue sit amet, vestibulum euismod quam.",
+}, {
+    "question": "I prefer abstract, more modern designs over traditional ones.",
     "param": "style",
     "answers": ["True", "False"],
     "selection_type": "single",
     "content_type": "text"
-},{
-    "question": "Cras eu auctor enim. Nullam ex nisl, accumsan sed augue sit amet, vestibulum euismod quam.",
+}, {
+    "question": "Which WFH setup do you think suits you best?",
     "param": "color",
-    "answers": ["black", "brown", "grey", "white", "green", "blue", "purple", "pink", "red", "orange", "yellow"],
+    "answers": ["neutral.jpg", "white.jpg", "warm.jpg", "cool.jpg"],
     "selection_type": "multiple",
-    "content_type": "text"
+    "content_type": "images"
 }]

@@ -1,15 +1,22 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { useEffect } from 'react';
 import { connect } from "react-redux"
 
 const mapStateToProps = state => ({
+results: state.quiz.results
 });
 
-const Results = props => <Container fluid as="section">
-    <Row className="py-3">
-        <Col xxl={6} xl={8} lg={10} md={12} className="mx-lg-auto d-flex justify-content-between">
-            Results
-        </Col>
-    </Row>
-</Container>
+const Results = ({results}) => {
+    useEffect(() => {
+        document.getElementById("results").scrollIntoView()
+    }, [])
+    
+    return <section className="quiz__results container" id="results">
+        <div className="grid">
+            <div className="grid-item">
+                {results.map(d => <></>)}
+            </div>
+        </div>
+    </section>
+}
 
 export default connect(mapStateToProps)(Results)
