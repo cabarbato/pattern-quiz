@@ -71,9 +71,6 @@ const quizSlice = createSlice({
     },
     reset(state, action) {
       Object.entries(initialState).forEach(([k, v]) => state[k] = v)
-
-      state.current_question = current_question
-      state.current_question = data[current_question]
     },
   },
   extraReducers: (builder) => {

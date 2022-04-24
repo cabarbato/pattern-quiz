@@ -8,6 +8,7 @@ NOTE: results when parameters are added contain thumbnail data that needs format
 - [ ] Infinite scroll pagination for results?
 - [ ] Animate slides on change
 - [ ] More responsive styling
+
 ---
 
 # Getting Started with Create React App

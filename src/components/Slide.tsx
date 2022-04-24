@@ -70,7 +70,7 @@ const Slide = ({ current_question, current_score, question_data, onSetScore, onS
                         <label
                             key={Array.isArray(d) ? d[1] : i} htmlFor={value} role="button" className={checked ? "secondary" : "outline secondary"}>
                             <input type={answer_type} id={value} onChange={e => e.target.checked && changeValue(e.target.value)} name="question" checked={checked} value={value} />
-                            {question_data.content_type === "images" ? <img src={`/static/media/${question_data.param}/${d}`} alt={`Option ${i + 1}: ${d.replace('.jpg','')}`} /> : d}
+                            {question_data.content_type === "images" ? <img src={`${window.location.href}/static/media/${question_data.param}/${d}`} alt={`Option ${i + 1}: ${d.replace('.jpg','')}`} /> : d}
                         </label>
                     )
                 })}
