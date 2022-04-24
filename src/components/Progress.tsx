@@ -7,7 +7,7 @@ const mapStateToProps = state => ({
 });
 const Progress = ({ total_questions, current_question, is_submitted }) => {
     const total = total_questions + 1,
-        percent = 100 / (total - current_question + 1);
+        percent = (current_question / total) * 100;
 
     return <div className="progress">
             <progress className="progress__bar animated" value={is_submitted ? 100 : percent} max="100" />

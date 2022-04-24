@@ -1,9 +1,8 @@
 import Progress from "../components/Progress";
 import Slide from "../components/Slide";
 import Nav from "../components/Nav";
-import "./Questions.scss";
 
-const Questions = () => <section className="questions container">
+const Questions = () => <section className="container" id="questions">
     <Progress />
     <Slide />
     <Nav />

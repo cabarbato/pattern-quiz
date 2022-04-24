@@ -1,22 +1,26 @@
 import { useEffect } from 'react';
-import { connect } from "react-redux"
+import { connect } from "react-redux";
+import FeaturedProduct from '../components/FeaturedProduct';
+import ProductCard from '../components/ProductCard';
 
 const mapStateToProps = state => ({
-results: state.quiz.results
+    results: state.quiz.results
 });
 
-const Results = ({results}) => {
+const Results = ({ results }) => {
     useEffect(() => {
-        document.getElementById("results").scrollIntoView()
+        const { top } = document.getElementById("results").getBoundingClientRect();
+        window.scrollTo(0, top + window.innerHeight)
     }, [])
     
-    return <section className="quiz__results container" id="results">
-        <div className="grid">
-            <div className="grid-item">
-                {results.map(d => <></>)}
-            </div>
+    const cards = results.slice(1)
+    return <div className="products">
+        <FeaturedProduct {...results[0]} />
+        <h4>Here's a few other suggestions based on your answers:</h4>
+        <div className="products__list grid">
+            {cards.map(d => <ProductCard {...d} />)}
         </div>
-    </section>
+    </div>
 }
 
 export default connect(mapStateToProps)(Results)

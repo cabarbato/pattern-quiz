@@ -8,7 +8,9 @@ const mapStateToProps = state => ({
 
 const Quiz = props => <>
     <Questions />
-    {props.is_submitted ? <Results /> : null}
+    <section className="container" id="results">
+        {props.is_submitted ? <Results /> : null}
+    </section>
 </>
 
 export default connect(mapStateToProps)(Quiz);

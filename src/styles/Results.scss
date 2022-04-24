@@ -1,0 +1,42 @@
+section#results {
+    .products {
+        &__list {
+            grid-template-columns: 1fr;
+            column-gap: 2rem;
+
+            @media (min-width: #{map-get($viewports, lg)}) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (min-width: #{map-get($viewports, xl)}) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            &-card {
+                transition: .3s;
+
+                &:link {
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    opacity: .7;
+                }
+
+                article {
+                    margin: .5rem 0;
+                    height: calc(100% - 1rem);
+
+                    header {
+                        padding: 2rem;
+
+                        img {
+                            display: block;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

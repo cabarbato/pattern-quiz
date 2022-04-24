@@ -1,5 +1,8 @@
 @import "core";
 
+@import "Questions";
+@import "Results";
+
 
 html,
 body {
@@ -45,5 +48,5 @@ h5,
 h6 {
   font-weight: 700;
   font-family: Lato, sans-serif;
-  color: $primary-500;
+  color: $primary-700;
 }

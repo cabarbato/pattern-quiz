@@ -2,10 +2,4 @@
 @import "variables";
 @import "mixins";
 
-[data-theme="light"],
-:root:not([data-theme="dark"]) {
-  --primary: $primary;
-  --secondary: $secondary; 
-}
-
 @import "~@picocss/pico/scss/pico";
