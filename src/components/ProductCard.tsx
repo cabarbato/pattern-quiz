@@ -5,7 +5,7 @@ const ProductCard = props => {
 
     return <a href={`https://www.spoonflower.com/en/fabric/${props.slug}`} className="products__list-card secondary" target="_blank">
         <article>
-            <img src={`https://garden.spoonflower.com/c/${props.designId}/p/f/m/${thumbnail}`} />
+            <img src={`https://garden.spoonflower.com/c/${props.designId}/i/m/${props.thumbnail}`} />
         </article>
     </a>
 }

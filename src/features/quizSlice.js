@@ -30,12 +30,12 @@ const setSubmitted = createAsyncThunk(
           ["page_size", 13],
         ]
 
-      /* Object.entries(score).forEach(([k, v]) => {
+      Object.entries(score).forEach(([k, v]) => {
         const key = data[k].param,
           value = param_data[data[k].param][v]
 
         if (value) parameters.push([key, value])
-      }) */
+      })
       
       const params = new URLSearchParams(parameters),
         response = await pythias.get(process.env.REACT_APP_ENDPOINT, {

@@ -1,10 +1,9 @@
 import { removeSpecial, decodeThumbnail } from "../helpers";
 
 const FeaturedProduct = props => {
-    const thumbnail = decodeThumbnail(props.thumbnail)
 
     return <div className="products__featured grid">
-        <img src={`https://garden.spoonflower.com/c/${props.designId}/p/f/l/${thumbnail}`} />
+        <img src={`https://garden.spoonflower.com/c/${props.designId}/i/m/${props.thumbnail}`} />
         <article>
 
             <header className="products__featured-title">
