@@ -1,7 +1,7 @@
 # Spoonflower Pattern Quiz
 This is a quick (<= 4hr) demo quiz using the Spoonflower API. It's a React/Redux based SPA that uses Axios to make a call to the designs endpoint using the user's selected answers and shows a short list of recommended patterns.
 
-NOTE: results when parameters are added contain thumbnail data that needs formatting, otherwise the server returns a 500 error. To keep from going over the 4 hour limit, the parameters have been commented out. (see [the submission Thunk](./src/features/quizSlice.js))
+NOTE: ~~results when parameters are added contain thumbnail data that needs formatting, otherwise the server returns a 500 error. To keep from going over the 4 hour limit, the parameters have been commented out. (see [the submission Thunk](./src/features/quizSlice.js))~~ This was fixed by updating the thumbnails from the /p/f/{size} path to /i/{size}
 
 ## Todo
 - [ ] Finish tests

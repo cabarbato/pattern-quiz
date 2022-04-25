@@ -1,5 +1,4 @@
 import logo from "../assets/images/logo.svg";
-import "./Header.scss";
 
 const Header = () => <>
     <header className="container header">
