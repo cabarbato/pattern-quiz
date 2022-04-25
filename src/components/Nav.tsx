@@ -18,14 +18,14 @@ const Nav = ({ total_questions, current_question, current_score, is_submitted, o
     const is_last = current_question >= total_questions;
 
     return <nav className="nav">
-        <div className="nav__button-wrapper" data-tooltip={!current_question ? "There's no more questions to go back to." : null}>
+        <div className="nav__button-wrapper" /* data-tooltip={!current_question ? "There's no more questions to go back to." : null} */>
             <button
                 className={`outline ${!current_question ? "secondary" : null}`}
                 disabled={!current_question}
                 onClick={() => { is_last && is_submitted ? onReset() : onSetCurrentQuestion(-1) }}>
                 {is_submitted ? "Start Over" : "Prev"}</button>
         </div>
-        <div className="nav__button-wrapper" data-tooltip={current_score === null ? "Oops! You need to choose an answer before you can go to the next question." : null}>
+        <div className="nav__button-wrapper" /* data-tooltip={current_score === null ? "Oops! You need to choose an answer before you can go to the next question." : null} */>
             <button
                 className={`outline ${current_score === null ? "secondary" : null}`}
                 disabled={current_score === null || is_submitted}

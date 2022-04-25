@@ -42,7 +42,7 @@ const setSubmitted = createAsyncThunk(
           params
         }),
         results = response.data.page_results;
-
+        console.log(response.request.responseURL)
       return {
         is_submitted,
         results
